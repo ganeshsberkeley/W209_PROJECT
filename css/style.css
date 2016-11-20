@@ -11,7 +11,7 @@ img {
 	max-width: 100%;
 }
 a:link {
-	color: #FFC200;
+	color: #ff99cc;
 	text-decoration: none;
 }
 a:hover {
@@ -19,12 +19,12 @@ a:hover {
 	text-decoration: none;
 }
 a:visited {
-	color: #FFC200;
+	color: #ff99cc;
 	text-decoration: none;
 }
 
 
-/* General Slides */ 
+/* General Slides */
 
 .slide {
 	background-attachment: fixed;
@@ -50,15 +50,13 @@ a:visited {
 /* Dark and Light Slides */
 
 .dark {
-	background-color: #ffe6ff;
+	background-color: #f7f7f9;
 	color: #333333;
-	text-shadow: 2px 2px 8px #000;
 }
 
 .light {
-	background-color: #ffffe6;
+	background-color: #fff;
 	color: #333333;
-	text-shadow: none;
 }
 
 /* Tableau Styles */
@@ -68,10 +66,10 @@ a:visited {
 }
 
 
-/* Slide 1: Title */ 
+/* Slide 1: Title */
 
 #slide1{
-	background-image:url('../images/zkih77.jpeg');
+	background-image:url('../images/title-background.jpg');
 	background-color:#ffffff;
 	color:#ff99cc;
 	background-repeat: no-repeat;
@@ -132,8 +130,7 @@ td {
 	background-repeat: no-repeat;
 	background-size: 200px 200px;
 	background-attachment: fixed;
-	background-position: center;	
-	text-shadow: 2px 2px 8px #000;
+	background-position: center;
 }
 
 #slide7 h1 {
@@ -184,7 +181,3 @@ td {
 	}
 
 }
-
-
-
-
