@@ -7,5 +7,9 @@ css -> CSS style directory
 
 images -> Image resources
 
-To invoke the project, go to the project directory and open bomber_jacket.html in your browser.
+To invoke the project, go to the project directory 
+Start Python using
+python -m SimpleHTTPServer 8888 &
+
+Open bomber_jacket.html in your browser.
 This will load up the project
