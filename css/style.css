@@ -69,14 +69,14 @@ a:visited {
 /* Slide 1: Title */
 
 #slide1{
-	background-image:url('../images/title-background.jpg');
+	background-image:url('../images/header.jpg');
 	background-color:#ffffff;
 	color:#ff99cc;
 	background-repeat: no-repeat;
-	background-size: 1000px 900px;
+	background-size: 780px 842px;
 	background-attachment: fixed;
-	background-position: center;
-	text-shadow: 2px 2px 8px #000;
+	background-position: right;
+	height: 394px;
 }
 
 #slide1 h1 {
@@ -84,6 +84,9 @@ a:visited {
 	letter-spacing: -3px;
 	margin: 0;
 	font-weight: 700;
+	position:relative;
+	left: -50px;
+	bottom: -80px;
 }
 
 /* Slide 2: Intro */
