@@ -84,9 +84,13 @@ a:visited {
 	letter-spacing: -3px;
 	margin: 0;
 	font-weight: 700;
-	position:relative;
-	left: -50px;
-	bottom: -80px;
+}
+
+#slide1 h2{
+	font-size: 5em;
+	letter-spacing: -3px;
+	margin: 0;
+	font-weight: 700;
 }
 
 /* Slide 2: Intro */
