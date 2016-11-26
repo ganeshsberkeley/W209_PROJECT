@@ -27,7 +27,10 @@ a:visited {
 /* General Slides */
 
 .slide {
+	/*
 	background-attachment: fixed;
+	background-color: #e6f7ff;
+	*/
 	width:100%;
 	height:auto;
 	position: relative;
@@ -48,14 +51,13 @@ a:visited {
 }
 
 /* Dark and Light Slides */
-
 .dark {
-	background-color: #f7f7f9;
+	background-color: #e6f7ff;
 	color: #333333;
 }
 
 .light {
-	background-color: #fff;
+	background-color: #e6f7ff;
 	color: #333333;
 }
 
@@ -94,12 +96,23 @@ a:visited {
 }
 
 /* Slide 2: Intro */
+#slide2 {
+	background-color:#f2f2f2;
+}
 
 #ytplayer {
 	margin-top: 3em;
 }
 
-/* Slide 4: Drought Dashboard */
+#slide3 {
+	background-color:#e6e6ff;
+}
+
+
+/* Slide 4: Cold vs Warm Dashboard */
+#slide4 {
+	background-color:#cce6ff;
+}
 
 h3 {
 	font-size: 1.2em;
@@ -129,23 +142,17 @@ td {
 	padding: 1% 4%;
 }
 
-/* Slide 7: Credits; */
-
-#slide7 {
-	background-color:#00ace6;
-	color:#ffffff;
-	background-repeat: no-repeat;
-	background-size: 200px 200px;
-	background-attachment: fixed;
-	background-position: center;
+#slide5 {
+	background-color:#e6ffff;
 }
 
-#slide7 h1 {
-/*	margin-top: 1em;
-*/}
+#slide6 {
+	background-color:#ccffcc;
+}
 
 
 /* Tablet */
+/*
 @media screen and (max-width: 1024px) {
 
 	.slide {
@@ -170,9 +177,11 @@ td {
 	}
 
 }
+*/
 
 
 /* Mobile */
+/*
 @media screen and (max-width: 480px) {
 
 	.slide{
@@ -188,3 +197,4 @@ td {
 	}
 
 }
+*/
