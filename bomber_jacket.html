@@ -80,55 +80,6 @@
 		</div>
 	</div>
 
-	<!-- Slide 3: How do we measure -->
-	<div class="slide light" id="slide3" data-slide="2b" data-stellar-background-ratio="0.5">
-		<div class="container clearfix">
-			<div id="content" class="grid_12">
-				<h1>What do we measure?</h1>
-				<div class="divTable">
-					<div class="divTableBody">
-						<div class="divTableRow">
-							<div class="divTableCell" style="width:60%;padding-left:0;">
-								<h2>Google Trends</h2>
-								<p>Data from Google Trends are used to find out how many times the term "bomber jacket" were searched in each geographic region over the past 5 years.</p>
-								<p>In order to easily compare the trend between different regions, we have to break down the trend into <i>stages</i> using the following steps:</p>
-								<div class="divTableRow">
-									<div class="divTableCell2a">
-										Step 1:
-									</div>
-									<div class="divTableCell2b">
-										Collect the original query figures from Google Trends.
-									</div>
-								</div>
-								<div class="divTableRow">
-									<div class="divTableCell2a">
-										Step 2:
-									</div>
-									<div class="divTableCell2b">
-										Smoothen the line by removing seasonal fluctuations.
-									</div>
-								</div>
-								<div class="divTableRow">
-									<div class="divTableCell2a">
-										Step 3:
-									</div>
-									<div class="divTableCell2b">
-										<i>Changepoints</i> are identified in the time series by using the <i>binary segmentation</i> algorithm (Edwards and Cavalli-Sforza 1965). Each changepoint represent a major change in the mean value, and we treat those mean values as <i>stage</i> in the popularity of the "bomber jacket" search term.
-									</div>
-								</div>
-								<br/>
-								<p>The charts on the right demonstrate these three steps based on the Google Trends figures from the New York State.</p>
-							</div>
-							<div class="divTableCell"  style="width:40%; padding: 20px 5px;">
-								<img src="images/3_charts.png" width="480">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<!-- Slide 3: Bomber Jacket Trends -->
 	<div class="slide dark" id="slide4" data-slide="3" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
@@ -147,16 +98,48 @@
 						Search data was retrieved from Google Trend for the time period from Nov 2010 to Mar 2016 for 1933 different cities. 8 different languages (as shown in the word
 						cloud on the right) were used to pull data for different regions. The data is then normalized using search categories.
 					</p>
-					<p>
-						The animated visualization below shows how search trend changes across the world.
-					</p>
+					<h2>Compare the trends between places</h2>
+					<p>In order to easily compare the trend between different regions, we have to break down the trend into <i>stages</i> using the following steps:</p>
+					<div class="divTableRow">
+						<div class="divTableCell2a">
+							Step 1:
+						</div>
+						<div class="divTableCell2b">
+							Collect the original query figures from Google Trends.
+						</div>
+					</div>
+					<div class="divTableRow">
+						<div class="divTableCell2a">
+							Step 2:
+						</div>
+						<div class="divTableCell2b">
+							Smoothen the line by removing seasonal fluctuations.
+						</div>
+					</div>
+					<div class="divTableRow">
+						<div class="divTableCell2a">
+							Step 3:
+						</div>
+						<div class="divTableCell2b">
+							<i>Changepoints</i> are identified in the time series by using the <i>binary segmentation</i> algorithm (Edwards and Cavalli-Sforza 1965). Each changepoint represent a major change in the mean value, and we treat those mean values as <i>stage</i> in the popularity of the "bomber jacket" search term.
+						</div>
+					</div>
+					<br/>
+					<p>The charts on the right demonstrate these three steps based on the Google Trends figures from the New York State.</p>	
 				</div>
 
 				<div id="content" class="grid_5 omega">
 					<img src="images/wordcloud.png">
 				</div>
 
+				<div id="content" class="grid_5 omega">
+					<img src="images/3_charts.png" width="400">
+				</div>
+
 				<div id="content" class="grid_12">
+					<p>
+						The animated visualization below shows how search trend changes across the world.
+					</p>
 					<div>
 						<div style="height:50px;line-height:50px;background-color:#263238;color:#fff;padding-left:20px;">
 							Search Trends by City (Nov 2010 - Mar 2016)
