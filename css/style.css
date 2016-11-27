@@ -198,3 +198,50 @@ td {
 
 }
 */
+
+/* Table layout */
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+	vertical-align: top;	
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell {
+	border: 0px solid #999999;
+	display: table-cell;
+	padding: 13px 30px;
+	vertical-align: top;	
+}
+.divTableCell2a {
+	border: 0px solid #999999;
+	display: table-cell;
+	padding: 3px 5px;
+	vertical-align: top;	
+	width: 15%;
+}
+.divTableCell2b {
+	border: 0px solid #999999;
+	display: table-cell;
+	padding: 3px 5px;
+	vertical-align: top;	
+	width: 85%;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}

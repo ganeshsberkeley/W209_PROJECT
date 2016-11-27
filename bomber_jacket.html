@@ -86,6 +86,54 @@
 		</div>
 	</div>
 
+	<!-- Slide 2b: How do we measure -->
+	<div class="slide light" id="slide2b" data-slide="2b" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div id="content" class="grid_12">
+				<h1>What do we measure?</h1>
+				<div class="divTable">
+					<div class="divTableBody">
+						<div class="divTableRow">
+							<div class="divTableCell" style="width:60%">
+								<h2>Google Trends</h2>
+								<p>Data from Google Trends are used to find out how many times the term "bomber jacket" were searched in each geographic region over the past 5 years.</p>
+								<p>In order to easily compare the trend between different regions, we have to break down the trend into <i>stages</i> using the following steps:</p>
+								<div class="divTableRow">
+									<div class="divTableCell2a">
+										Step 1:
+									</div>
+									<div class="divTableCell2b">
+										Collect the original query figures from Google Trends.
+									</div>
+								</div>
+								<div class="divTableRow">
+									<div class="divTableCell2a">
+										Step 2:
+									</div>
+									<div class="divTableCell2b">
+										Smoothen the line by removing seasonal fluctuations.
+									</div>
+								</div>
+								<div class="divTableRow">
+									<div class="divTableCell2a">
+										Step 3:
+									</div>
+									<div class="divTableCell2b">
+										<i>Changepoints</i> are identified in the time series by using the <i>binary segmentation</i> algorithm (Edwards and Cavalli-Sforza 1965). Each changepoint represent a major change in the mean value, and we treat those mean values as <i>stage</i> in the popularity of the "bomber jacket" search term.
+									</div>
+								</div>
+								<br/>
+								<p>The charts on the right demonstrate these three steps based on the Google Trends figures from the New York State.</p>
+							</div>
+							<div class="divTableCell"  style="width:40%; padding: 20px 5px;">
+								<img src="images/3_charts.png" width="480">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Slide 3: Bomber Jacket Trends -->
 	<div class="slide light" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
