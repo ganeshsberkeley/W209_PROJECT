@@ -97,45 +97,11 @@
 						normalized using search categories.
 					</p>
 
-					<h2 style="margin-top:100px;">Compare the trends between places</h2>
-					<p>In order to easily compare the trend between different regions, we have to break down the trend into <i>stages</i> using
-						the following steps:</p>
-					<div class="divTableRow">
-						<div class="divTableCell2a">
-							Step 1:
-						</div>
-						<div class="divTableCell2b">
-							Collect the original query figures from Google Trends.
-						</div>
-					</div>
-					<div class="divTableRow">
-						<div class="divTableCell2a">
-							Step 2:
-						</div>
-						<div class="divTableCell2b">
-							Smoothen the line by removing seasonal fluctuations.
-						</div>
-					</div>
-					<div class="divTableRow">
-						<div class="divTableCell2a">
-							Step 3:
-						</div>
-						<div class="divTableCell2b">
-							<i>Changepoints</i> are identified in the time series by using the <i>binary segmentation</i> algorithm (Edwards and
-							Cavalli-Sforza 1965). Each changepoint represent a major change in the mean value, and we treat those mean values
-							as <i>stage</i> in the popularity of the "bomber jacket" search term.
-						</div>
-					</div>
-					<br/>
 					<p>The charts on the right demonstrate these three steps based on the Google Trends figures from the New York State.</p>
 				</div>
 
 				<div id="content" class="grid_5 omega">
 					<img src="images/wordcloud.png">
-				</div>
-
-				<div id="content" class="grid_5 omega" style="margin-top:90px;">
-					<img src="images/3_charts.png" width="400">
 				</div>
 
 				<div id="content" class="grid_12">
@@ -342,6 +308,54 @@
 				<p>Project code can be retrived from <a href="https://github.com/ganeshsberkeley/W209_PROJECT">GitHub</a></p>
 			</div>
 
+		</div>
+	</div>
+
+
+	<!-- Slide 7: Appendix -->
+	<div class="slide" id="slide7" data-slide="8" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h1>Appendix</h1>
+				<div id="content" class="grid_7">
+					<h2 style="margin-top:100px;">Compare the trends between places</h2>
+					<p>In order to easily compare the trend between different regions, we have to break down the trend into <i>stages</i> using
+						the following steps:</p>
+					<div class="divTableRow">
+						<div class="divTableCell2a">
+							Step 1:
+						</div>
+						<div class="divTableCell2b">
+							Collect the original query figures from Google Trends.
+						</div>
+					</div>
+					<div class="divTableRow">
+						<div class="divTableCell2a">
+							Step 2:
+						</div>
+						<div class="divTableCell2b">
+							Smoothen the line by removing seasonal fluctuations.
+						</div>
+					</div>
+					<div class="divTableRow">
+						<div class="divTableCell2a">
+							Step 3:
+						</div>
+						<div class="divTableCell2b">
+							<i>Changepoints</i> are identified in the time series by using the <i>binary segmentation</i> algorithm (Edwards and
+							Cavalli-Sforza 1965). Each changepoint represent a major change in the mean value, and we treat those mean values
+							as <i>stage</i> in the popularity of the "bomber jacket" search term.
+						</div>
+					</div>
+					<br/>
+					<p>The charts on the right demonstrate these three steps based on the Google Trends figures from the New York State.</p>
+				</div>
+
+				<div id="content" class="grid_5 omega" style="margin-top:90px;">
+					<img src="images/3_charts.png" width="400">
+				</div>
+			</div>
 		</div>
 	</div>
 
