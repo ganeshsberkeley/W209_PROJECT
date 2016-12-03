@@ -59,24 +59,6 @@
 				/>
 				</iframe>
 			</div>
-
-			<div id="content" class="grid_12">
-				<h2>What defines a Bomber Jacket</h2>
-				<p>
-					The bomber jacket is characterized by its sleek black or dark brown leather material that features an elasticized waistband
-					that hugs the hem of the jacket to the wearer's waist. As a result, the jacket is fitted at the waist and loose around
-					the person's stomach and chest. Generally, the jackets have cuffed sleeves and a metal zipper. Because of the bomber
-					jacket's popularity, many companies have adapted new styling to the iconic look.
-				</p>
-			</div>
-
-			<div id="content" class="grid_12">
-				<h2>Bomber Jacket Trend Analysis to Follow</h2>
-				<p>In this presentation we will do the following analysis</p>
-				<p>We will analyze the spread of the jacket trend across the world over time</p>
-				<p>We will perform analysis to see if there is any discernable trend between warm-hot countries vs cold countries over purchase of the jacket </p>
-				<p>We will perform analysis to see if the jacket is viewed as a seasonal winter item or a fashion trend item not restricted as winter accesory</p>
-			</div>
 		</div>
 	</div>
 
@@ -185,68 +167,102 @@
 	</div>
 
 
-	<!-- Slide 5: Cold vs Hot -->
+	<!-- Slide 4: Cold vs Hot -->
 	<div class="slide dark" id="slide5" data-slide="4" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content" class="grid_12">
-				<h1>Bombers: Fashion or Just another Accesory to Stay Warm?</h1>
-				<h2>Cold vs Warm Comparison</h2>
+				<h1>Fashion Statement or Just Accesory to Stay Warm?</h1>
 			</div>
-			<div id="content" class="grid_7">
+			<div id="content" class="grid_12">
 				<p>
 					Bomber jacket was initially designed for pilots to keep themselves warm. 
-					Is it trending today as a real fashion statement or are people buying them to stay warm is the primary question.
-					In order to anwser this question, cities are divided into 2 groups: cold and hot. Generally, cities that have snowfall in
-					winter are considered as cold, whereas cities that seldom snowfall or even do not have winter are considered as hot.  
+					Therefore the primary question we are trying to address is whether a purchase of bomber jacket is to make fashion statement or just as an accessory to stay warm.
+					In order to answer this question, countries/cities are divided into two groups: cold/warm and hot.  
+					<br>
+					<br>
+					Each country is given a weight based on the average winter temperature.  
+					<br>
+					<br>
+					The average winter temperature was retrived from Wikipedia.
+					<br>
+					<br>
+					The formula to calculate the weight is,
+					<br>
+					Weight = (Average Winter temp in farenheit)/(sum of all average winter temperatures for countries used in Analysis) * 100
+					<br>
+					<br>
+					Based on a threshold we could classify the country as hot or cold.  
+					We decided to group countries which fall under warm category aso under the cold group so that we inherently bias the sales queries towards the default hypothesis that interest in jacket purchase is to stay warm
+					<br>
+					
+					<div id="content" class="grid_12">
+						<h3>Weights Assigned to Countries (Sample)</h3>
+						<table>
+							<tr>
+								<th>Country</th>
+								<th>Average Cold Temperature (*F)</th>
+								<th>Weight</th>
+								<th>Type</th>
+							</tr>
+							<tr bgcolor="#B30F1C">
+								<td>Argentina</td>
+								<td>53.6</td>
+								<td>7.25</td>
+								<td>Hot</td>
+							</tr>
+							<tr bgcolor="#B30F1C">
+								<td>Australia</td>
+								<td>59</td>
+								<td>7.97</td>
+								<td>Hot</td>
+							</tr>
+							<tr bgcolor="#B30F1C">
+								<td>Brazil</td>
+								<td>73.4</td>
+								<td>9.92</td>
+								<td>Hot</td>
+							</tr>														
+							<tr bgcolor="#CACACA">
+								<td>France</td>
+								<td>41</td>
+								<td>5.54</td>
+								<td>Warm</td>
+							</tr>
+							<tr bgcolor="#CACACA">
+								<td>Belgium</td>
+								<td>37.4</td>
+								<td>5.05</td>
+								<td>Warm</td>
+							</tr>
+							<tr bgcolor="#1E548D">
+								<td>China</td>
+								<td>21.2</td>
+								<td>2.87</td>
+								<td>Cold</td>
+							</tr>
+							<tr bgcolor="#1E548D">
+								<td>Canada</td>
+								<td>26.6</td>
+								<td>3.6</td>
+								<td>Cold</td>
+							</tr>	
+							</table>
+					</div>
 				</p>
-				<p>
-					Analysis results are shown below. The trends for cold and hot cities almost match each other. 
-					Surprisingly even though cold cities show larger trend, hot cities follow a similar trend pattern.	
-				</p>
-				<p>
-					The result also indicates that bomber jacket is no longer a seasonal item.
-					The searches are consistently high all-year-round, meaning it's about style as much as it is utility.
-				</p>
-			</div>
-			<div id="content" class="grid_5 omega">
-				<h3>Cold vs Warm City Samples</h3>
-				<table>
-					<tr>
-						<th width="60%">Cities</th>
-						<th>Indicator</th>
-					</tr>
-					<tr bgcolor="#1E548D">
-						<td>London</td>
-						<td>Less than -4.0</td>
-					</tr>
-					<tr bgcolor="#2176B2">
-						<td>New York</td>
-						<td>-3.9 to -3.0</td>
-					</tr>
-					<tr bgcolor="#549DC8">
-						<td>Tokyo</td>
-						<td>-2.9 to -1.0</td>
-					</tr>
-					<tr bgcolor="#CACACA" style="color: #666666;">
-						<td>Shanghai</td>
-						<td>-0.9 to 0.9</td>
-					</tr>
-					<tr bgcolor="#EF6D5D">
-						<td>Hong Kong</td>
-						<td>1.0 to 2.9</td>
-					</tr>
-					<tr bgcolor="#D21F1E">
-						<td>Sao Paulo</td>
-						<td>3.0 to 3.9</td>
-					</tr>
-					<tr bgcolor="#B30F1C">
-						<td>Singapore</td>
-						<td>Greater than 4.0</td>
-					</tr>
-				</table>
-			</div>
+				
+				
 
-
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- Slide 5: Analysis -->
+	<div class="slide dark" id="slide6" data-slide="5" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div id="content" class="grid_12">
+				<h1>Analysis</h1>
+			</div>
 			<!-- Begin Tableau Dashboard -->
 			<div class='tableauPlaceholder' id='viz1479910370321' style='width: 1002px; height: 860px;'>
 				<noscript>
@@ -270,12 +286,11 @@
 						</object>
 			</div>
 			<!-- End Tableau Dashboard -->
-
 		</div>
 	</div>
 
 
-	<!-- Slide 5: Conclusion -->
+	<!-- Slide 6: Conclusion -->
 
 	<div class="slide light" id="slide5" data-slide="6" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
@@ -283,17 +298,15 @@
 				<h1>Conclusion</h1>
 
 			</div>
-			<div id="content" class="grid_12">
-				<p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel,
-					gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur
-					malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
-
-			</div>
-			<div id="content" class="grid_12">
-				<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet,
-					mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
-
-			</div>
+			<p>
+				Analysis results threw suprising results. Contrary to the general perception the trends for cold and hot cities almost match each other. 
+				Surprisingly even though cold cities show larger trend, hot cities follow a similar trend pattern.	
+			</p>
+			<p>
+				The result also indicates that bomber jacket is no longer a seasonal item.
+				The searches are consistently high all-year-round, meaning it's about style as much as it is utility.
+			</p>
+			
 		</div>
 	</div>
 
