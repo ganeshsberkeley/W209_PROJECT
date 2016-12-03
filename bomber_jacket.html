@@ -153,94 +153,38 @@
 
 
 	<!-- Slide 4: Cold vs Hot -->
-	<div class="slide dark" id="slide5" data-slide="4" data-stellar-background-ratio="0.5">
+	<div class="slide dark" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content" class="grid_12">
-				<h1>Fashion Statement or Just Accesory to Stay Warm?</h1>
+				<h1>Fashion Statement or Just Another Accesory to Stay Warm?</h1>
 			</div>
 			<div id="content" class="grid_12">
 				<p>
-					Bomber jacket was initially designed for pilots to keep themselves warm. Therefore the primary question we are trying to
-					address is whether a purchase of bomber jacket is to make fashion statement or just as an accessory to stay warm. In
-					order to answer this question, countries/cities are divided into two groups: cold/warm and hot.
+					Bomber jacket was initially designed for pilots to keep themselves warm. Therefore the primary question we addressed was if that was still true.  
+					<br>We performed analysis to determine if an online query for bomber jacket was to make a potential purchase for fashion statement or to make a potential purchase as an accessory to stay warm. 
 					<br>
-					<br> Each country is given a weight based on the average winter temperature.
 					<br>
-					<br> The average winter temperature was retrived from Wikipedia.
+					Following was the hypothesis we addressed
 					<br>
-					<br> The formula to calculate the weight is,
-					<br> Weight = (Average Winter temp in farenheit)/(sum of all average winter temperatures for countries used in Analysis)
-					* 100
+					Null Hypothesis (H0): Online Queries for Bomber Jacket (using Google Trend) is towards a potential purchase to keep warm
 					<br>
-					<br> Based on a threshold we could classify the country as hot or cold. We decided to group countries which fall under
-					warm category aso under the cold group so that we inherently bias the sales queries towards the default hypothesis that
-					interest in jacket purchase is to stay warm
+					Alternate Hypothesis (H1): Online Queries for Bomber Jacket (using Google Trend) is towards a potential purchase for fashion statement
 					<br>
-
-					<div id="content" class="grid_12">
-						<h3>Weights Assigned to Countries (Sample)</h3>
-						<table>
-							<tr>
-								<th>Country</th>
-								<th>Average Cold Temperature (*F)</th>
-								<th>Weight</th>
-								<th>Type</th>
-							</tr>
-							<tr bgcolor="#B30F1C">
-								<td>Argentina</td>
-								<td>53.6</td>
-								<td>7.25</td>
-								<td>Hot</td>
-							</tr>
-							<tr bgcolor="#B30F1C">
-								<td>Australia</td>
-								<td>59</td>
-								<td>7.97</td>
-								<td>Hot</td>
-							</tr>
-							<tr bgcolor="#B30F1C">
-								<td>Brazil</td>
-								<td>73.4</td>
-								<td>9.92</td>
-								<td>Hot</td>
-							</tr>
-							<tr bgcolor="#CACACA">
-								<td>France</td>
-								<td>41</td>
-								<td>5.54</td>
-								<td>Warm</td>
-							</tr>
-							<tr bgcolor="#CACACA">
-								<td>Belgium</td>
-								<td>37.4</td>
-								<td>5.05</td>
-								<td>Warm</td>
-							</tr>
-							<tr bgcolor="#1E548D">
-								<td>China</td>
-								<td>21.2</td>
-								<td>2.87</td>
-								<td>Cold</td>
-							</tr>
-							<tr bgcolor="#1E548D">
-								<td>Canada</td>
-								<td>26.6</td>
-								<td>3.6</td>
-								<td>Cold</td>
-							</tr>
-						</table>
-					</div>
+					<br>
+					In order to answer this question, countries/cities are divided into two groups: cold/warm and hot.
+					<br>
+					<br> Each country was given a weight based on the average winter temperature.  Please refer to Appendix-2 for details
+					<br>
+					<br> The average winter temperature was retrieved from Wikipedia.
+					<br>
 				</p>
-
-
-
 			</div>
 		</div>
 	</div>
 
 
 	<!-- Slide 5: Analysis -->
-	<div class="slide dark" id="slide6" data-slide="5" data-stellar-background-ratio="0.5">
+	<div class="slide light" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content" class="grid_12">
 				<h1>Analysis</h1>
@@ -274,7 +218,7 @@
 
 	<!-- Slide 6: Conclusion -->
 
-	<div class="slide light" id="slide5" data-slide="6" data-stellar-background-ratio="0.5">
+	<div class="slide dark" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content" class="grid_12">
 				<h1>Conclusion</h1>
@@ -292,8 +236,8 @@
 		</div>
 	</div>
 
-	<!-- Slide 6: Credits -->
-	<div class="slide" id="slide6" data-slide="7" data-stellar-background-ratio="0.5">
+	<!-- Slide 7: Credits -->
+	<div class="slide light" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">
@@ -312,12 +256,12 @@
 	</div>
 
 
-	<!-- Slide 7: Appendix -->
-	<div class="slide" id="slide7" data-slide="8" data-stellar-background-ratio="0.5">
+	<!-- Slide 7: Appendix-1 -->
+	<div class="slide dark" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">
-				<h1>Appendix</h1>
+				<h1>Appendix-1</h1>
 				<div id="content" class="grid_7">
 					<h2 style="margin-top:100px;">Compare the trends between places</h2>
 					<p>In order to easily compare the trend between different regions, we have to break down the trend into <i>stages</i> using
@@ -354,6 +298,79 @@
 
 				<div id="content" class="grid_5 omega" style="margin-top:90px;">
 					<img src="images/3_charts.png" width="400">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Slide 8: Appendix-2 -->
+	<div class="slide light" id="slide9" data-slide="9" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h1>Appendix-2</h1>
+				<br> The formula to calculate the weight to differentiate hot/cold countries is given below.
+				<br>
+				<br> Weight = (Average Winter temp in farenheit)/(sum of all average winter temperatures for countries used in Analysis) * 100
+				<br>
+				<br> Based on a threshold we could classify the country as hot or cold. We decided to classify countries which fall under warm category also under the cold category so that we can inherently bias the online queries towards the default hypothesis that interest in jacket is to stay warm.  
+				This would help with the alternate hypothesis that bomber jacket queries in Google Trend is for fashion.
+				<br>
+				<br>
+				<br>
+
+				<div id="content" class="grid_12">
+					<h3>Weights Assigned to Countries (Sample)</h3>
+					<table>
+						<tr>
+							<th>Country</th>
+							<th>Average Winter Temperature (*F)</th>
+							<th>Weight</th>
+							<th>Type</th>
+						</tr>
+						<tr bgcolor="#B30F1C">
+							<td>Argentina</td>
+							<td>53.6</td>
+							<td>7.25</td>
+							<td>Hot</td>
+						</tr>
+						<tr bgcolor="#B30F1C">
+							<td>Australia</td>
+							<td>59</td>
+							<td>7.97</td>
+							<td>Hot</td>
+						</tr>
+						<tr bgcolor="#B30F1C">
+							<td>Brazil</td>
+							<td>73.4</td>
+							<td>9.92</td>
+							<td>Hot</td>
+						</tr>
+						<tr bgcolor="#CACACA">
+							<td>France</td>
+							<td>41</td>
+							<td>5.54</td>
+							<td>Warm</td>
+						</tr>
+						<tr bgcolor="#CACACA">
+							<td>Belgium</td>
+							<td>37.4</td>
+							<td>5.05</td>
+							<td>Warm</td>
+						</tr>
+						<tr bgcolor="#1E548D">
+							<td>China</td>
+							<td>21.2</td>
+							<td>2.87</td>
+							<td>Cold</td>
+						</tr>
+						<tr bgcolor="#1E548D">
+							<td>Canada</td>
+							<td>26.6</td>
+							<td>3.6</td>
+							<td>Cold</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
