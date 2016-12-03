@@ -52,8 +52,8 @@ a:visited {
 
 /* Dark and Light Slides */
 .dark {
-	background-color: #f2f2f2;
-	color: #333333;
+	background-color: #37474f;
+	color: #fff;
 }
 
 .light {
@@ -226,4 +226,10 @@ td {
 }
 .divTableBody {
 	display: table-row-group;
+}
+
+#slide2 p::first-letter {
+  font-weight: bold;
+  color: red;
+  font-size: 1.7em;
 }
