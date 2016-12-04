@@ -11,14 +11,14 @@ img {
 	max-width: 100%;
 }
 a:link {
-	color: #ff99cc;
-	text-decoration: none;
-}
-a:hover {
 	color: #FF3727;
 	text-decoration: none;
 }
 a:visited {
+	color: #FF3727;
+	text-decoration: none;
+}
+a:hover {
 	color: #ff99cc;
 	text-decoration: none;
 }
