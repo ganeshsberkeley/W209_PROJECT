@@ -175,44 +175,58 @@
 					Following was the hypothesis we addressed
 				</p>
 				<p>
-					Null Hypothesis (H0): Online Queries for Bomber Jacket (using Google Trend) is towards a potential purchase to keep warm
+					Null Hypothesis (H0): Online Queries for Bomber Jacket (from Google Trend) is towards a potential purchase to keep warm
 				</p>
 				<p>
-					Alternate Hypothesis (H1): Online Queries for Bomber Jacket (using Google Trend) is towards a potential purchase for fashion
+					Alternate Hypothesis (H1): Online Queries for Bomber Jacket (from Google Trend) is towards a potential purchase for fashion
 					statement
-				</p>
-				<p>
-					In order to answer this question, countries/cities are divided into two groups: cold/warm and hot.
-				</p>
-				<p>
-					Each country was given a weight based on the average winter temperature. Please refer to
-					<a href="#appendix2">Appendix-2</a> for details.
-				</p>
-				<p>
-					The average winter temperature was retrieved from Wikipedia.
+					In order to answer this question, we divided countries/regions/cities into two groups: cold and hot. Please refer to <a href="#appendix2">Appendix-2</a> for details on weights.
+					The average winter temperature was retrieved from Wikipedia as base to determine weights for classification.
+					<br><br>
+					Each country/region/city was given a weight based on the average winter temperature. This formed the basic to determine how to categorize.
+					Such categorization allowed us to compare the number of queries.  A person querying a bomber jacket from a "hot" country/region/city is obviously shopping for its fashion value adding validity to our alternate hypothesis.   	  					
 				</p>
 			</div>
 
+		</div>
+	</div>
+
+	<!-- Slide 5: Analysis -->
+	<div class="slide light" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
 			<div id="content" class="grid_12">
-				<h2>Analysis</h2>
+				<h1>Analysis</h1>
 			</div>
+			<p>The following chart shows the trend in bomber jacket queries for hot/cold categories</p>
 			<!-- Begin Tableau Dashboard -->
 			<iframe src="https://public.tableau.com/views/Geo_bombers_by_statescopy/VolumeperTemp?:embed=y&:loadOrderID=1&:showVizHome=no" width="1002" height="640"></iframe>
 			<!-- End Tableau Dashboard -->
-			
+			<p>
+			   The chart shows the trend between the categories follow very closely.  
+			   We see that even though the number of queries is consistenly higher for cold category (which is quite logical) when compared with hot category both follow an increasing trend.
+			   This aligns with our alternate hypothesis that bomber jacket has become a fashion item.
+			</p>
+			<br>
+			<br>
+			<p>
+			   The following figure shows the queries across various regions the in the world.  Please hover over each circle to gain more insight
+			</p>
 			<!-- Begin Tableau Dashboard -->
 			<iframe src="https://public.tableau.com/views/Geo_bombers_by_statescopy/GeoperTemp?:embed=y&:showVizHome=no" width="1002" height="640"></iframe>
 			<div style="height:30px;line-height:30px;background-color:#ccc;color:#000;padding-left:20px;width:986px;position:relative;top:-10px;">
 				<h6 style="margin:0;">Size of the circle represents search volume for 'bomber jacket'</h6>
 			</div>
-			<!-- End Tableau Dashboard -->
+			<!-- End Tableau Dashboard -->	
+			<p>
+			   As seen from the above chart, the queries for bomber jacket is spread out across the world providing strength to our alternate hypothesis that bomber jacket is now a fashion trend.  
+			   Potential buyers are not only showing interest for it's utility, but also for the sense of fashion it brings.
+			</p>			
 		</div>
 	</div>
 
-
-	<!-- Slide 5: Conclusion -->
-
-	<div class="slide light" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+	
+	<!-- Slide 6: Conclusion -->
+	<div class="slide dark" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div id="content" class="grid_12">
 				<h1>Conclusion</h1>
@@ -220,7 +234,7 @@
 			</div>
 			<p>
 				Analysis results threw suprising results. Contrary to the general perception the trends for cold and hot cities almost match
-				each other. Surprisingly even though cold cities show larger trend, hot cities follow a similar trend pattern.
+				each other. Surprisingly, even though cold cities show larger trend, hot cities follow a similar trend pattern.
 			</p>
 			<p>
 				The result also indicates that bomber jacket is no longer a seasonal item. The searches are consistently high all-year-round,
@@ -230,8 +244,8 @@
 		</div>
 	</div>
 
-	<!-- Slide 6: Credits -->
-	<div class="slide dark" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+	<!-- Slide 7: Credits -->
+	<div class="slide credits" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">
@@ -251,7 +265,7 @@
 	</div>
 
 
-	<!-- Slide 7: Appendix -->
+	<!-- Slide 8: Appendix -->
 	<div class="slide appendix" data-slide="8" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 			<div class="grid_12">
@@ -300,12 +314,9 @@
 				<p> The formula to calculate the weight to differentiate hot/cold countries is given below.</p>
 
 				<p style="font-style:italic;"> Weight = (Average Winter temp in farenheit)/(sum of all average winter temperatures for countries used in Analysis) *
-					100
+					(total number of entries)
 				</p>
-				<p> Based on a threshold we could classify the country as hot or cold. We decided to classify countries which fall under
-					warm category also under the cold category so that we can inherently bias the online queries towards the default hypothesis
-					that interest in jacket is to stay warm. This would help with the alternate hypothesis that bomber jacket queries in
-					Google Trend is for fashion.
+				<p> Based on a threshold we could classify the country as hot or cold.
 				</p>
 
 				<div id="content" class="grid_12">
@@ -313,50 +324,58 @@
 					<table>
 						<tr>
 							<th>Country</th>
+							<th>City/Region</th>
 							<th>Average Winter Temperature (*F)</th>
 							<th>Weight</th>
 							<th>Type</th>
 						</tr>
 						<tr bgcolor="#B30F1C">
 							<td>Brazil</td>
-							<td>73.4</td>
-							<td>9.92</td>
+							<td>Bahia</td>
+							<td>71.6</td>
+							<td>1.751</td>
 							<td>Hot</td>
 						</tr>
 						<tr bgcolor="#D21F1E">
-							<td>Australia</td>
-							<td>59</td>
-							<td>7.97</td>
+							<td>Mexico</td>
+							<td>Baja California</td>
+							<td>70.88</td>
+							<td>1.733</td>
 							<td>Hot</td>
 						</tr>
 						<tr bgcolor="#EF6D5D">
 							<td>Argentina</td>
-							<td>53.6</td>
-							<td>7.25</td>
+							<td>Autonomous City of Buenos Aires</td>
+							<td>53.0</td>
+							<td>1.296</td>
 							<td>Hot</td>
 						</tr>
 						<tr bgcolor="#549DC8">
-							<td>France</td>
-							<td>41</td>
-							<td>5.54</td>
-							<td>Warm</td>
+							<td>Belgium</td>
+							<td>Brussels</td>
+							<td>37.0</td>
+							<td>0.905</td>
+							<td>Cold</td>
 						</tr>
 						<tr bgcolor="#549DC8">
-							<td>Belgium</td>
-							<td>37.4</td>
-							<td>5.05</td>
-							<td>Warm</td>
+							<td>Japan</td>
+							<td>Chiba</td>
+							<td>32</td>
+							<td>0.78</td>
+							<td>Cold</td>
 						</tr>
 						<tr bgcolor="#2176B2">
 							<td>Canada</td>
-							<td>26.6</td>
-							<td>3.6</td>
+							<td>British Columbia</td>
+							<td>30</td>
+							<td>0.733</td>
 							<td>Cold</td>
 						</tr>
 						<tr bgcolor="#1E548D">
 							<td>China</td>
-							<td>21.2</td>
-							<td>2.87</td>
+							<td>Chongqing</td>
+							<td>5.5</td>
+							<td>0.134</td>
 							<td>Cold</td>
 						</tr>
 					</table>
